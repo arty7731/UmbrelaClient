@@ -1,20 +1,186 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<mat-card>
+  <mat-card-content>
+    <h2 class="example-h2">Tabs with text labels</h2>
+    <mat-tab-group class="demo-tab-group">
+      <mat-tab label="Tab 1">
+        <div class="demo-tab-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+          Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+          In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+          feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+          orci enim rutrum enim, vel tempor sapien arcu a tellus.
+        </div>
+      </mat-tab>
+      <mat-tab label="Tab 2">
+        <div class="demo-tab-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+          Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+          In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+          feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+          orci enim rutrum enim, vel tempor sapien arcu a tellus.
+        </div>  
+      </mat-tab>
+      <mat-tab label="Tab 3" disabled>
+        No content  
+      </mat-tab>
+      <mat-tab label="Tab 4">
+        <div class="demo-tab-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+          Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+          In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+          feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+          orci enim rutrum enim, vel tempor sapien arcu a tellus.
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+          Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+          In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+          feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+          orci enim rutrum enim, vel tempor sapien arcu a tellus.
+        </div>  
+      </mat-tab>
+      <mat-tab label="Tab 5">
+        No content  
+      </mat-tab>
+      <mat-tab label="Tab 6">
+        No content  
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-content>
+    <h2 class="example-h2">Tabs with icon labels</h2>
+    <mat-tab-group class="demo-tab-group">
+      <mat-tab label="Tab 1">
+        <ng-template mat-tab-label>
+          <mat-icon>security</mat-icon>
+        </ng-template>
+        <div class="demo-tab-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+          Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+          In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+          feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+          orci enim rutrum enim, vel tempor sapien arcu a tellus.
+        </div>
+      </mat-tab>
+      <mat-tab label="Tab 2">
+        <ng-template mat-tab-label>
+          <mat-icon>attach_file</mat-icon>
+        </ng-template>
+        <div class="demo-tab-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+          Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+          In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+          feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+          orci enim rutrum enim, vel tempor sapien arcu a tellus.
+        </div>  
+      </mat-tab>
+      <mat-tab label="Tab 3" disabled>
+        <ng-template mat-tab-label>
+          <mat-icon>block</mat-icon>
+        </ng-template>
+        No content  
+      </mat-tab>
+      <mat-tab label="Tab 4">
+        <ng-template mat-tab-label>
+          <mat-icon>loop</mat-icon>
+        </ng-template>
+        <div class="demo-tab-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+          Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+          In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+          feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+          orci enim rutrum enim, vel tempor sapien arcu a tellus.
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
+          Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
+          In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
+          feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
+          orci enim rutrum enim, vel tempor sapien arcu a tellus.
+        </div>  
+      </mat-tab>
+      <mat-tab label="Tab 5">
+        <ng-template mat-tab-label>
+          <mat-icon>build</mat-icon>
+        </ng-template>
+        No content  
+      </mat-tab>
+      <mat-tab label="Tab 6">
+        <ng-template mat-tab-label>
+          <mat-icon>thumb_down</mat-icon>
+        </ng-template>
+        <h3>Basic Buttons</h3>
+<div class="button-row">
+  <button mat-button>Basic</button>
+  <button mat-button color="primary">Primary</button>
+  <button mat-button color="accent">Accent</button>
+  <button mat-button color="warn">Warn</button>
+  <button mat-button disabled>Disabled</button>
+  <a mat-button routerLink=".">Link</a>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+<h3>Raised Buttons</h3>
+<div class="button-row">
+  <button mat-raised-button>Basic</button>
+  <button mat-raised-button color="primary">Primary</button>
+  <button mat-raised-button color="accent">Accent</button>
+  <button mat-raised-button color="warn">Warn</button>
+  <button mat-raised-button disabled>Disabled</button>
+  <a mat-raised-button routerLink=".">Link</a>
+</div>
+
+<h3>Icon Buttons</h3>
+<div class="button-row">
+  <button mat-icon-button>
+    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+  </button>
+  <button mat-icon-button color="primary">
+    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+  </button>
+  <button mat-icon-button color="accent">
+    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+  </button>
+  <button mat-icon-button color="warn">
+    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+  </button>
+  <button mat-icon-button disabled>
+    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+  </button>
+</div>
+
+<h3>Fab Buttons</h3>
+<div class="button-row">
+  <button mat-fab>Basic</button>
+  <button mat-fab color="primary">Primary</button>
+  <button mat-fab color="accent">Accent</button>
+  <button mat-fab color="warn">Warn</button>
+  <button mat-fab disabled>Disabled</button>
+  <button mat-fab>
+    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+  </button>
+  <a mat-fab routerLink=".">Link</a>
+</div>
+
+<h3>Mini Fab Buttons</h3>
+<div class="button-row">
+  <button mat-mini-fab>Basic</button>
+  <button mat-mini-fab color="primary">Primary</button>
+  <button mat-mini-fab color="accent">Accent</button>
+  <button mat-mini-fab color="warn">Warn</button>
+  <button mat-mini-fab disabled>Disabled</button>
+  <button mat-mini-fab>
+    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+  </button>
+  <a mat-mini-fab routerLink=".">Link</a>
+</div>
+ 
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>
+
+
 
